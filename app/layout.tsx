@@ -9,12 +9,30 @@ const sourceCodePro = Source_Code_Pro({
   variable: '--font-source-code-pro',
 })
 
+const title = "Animate In"
+const description = 'React UI Component for animating elements in with Tailwind and CSS Animation'
+
 export const metadata: Metadata = {
-  title: 'Animate In',
-  description: 'Generate custom Open AI functions that return JSON',
+  title,
+  description,
   icons: {
     icon: '/favicon.svg',
   },
+  openGraph: {
+    type: "website",
+    url: "https://animate-in.vercel.app/",
+    title,
+    description,
+    siteName: title,
+    images: [{
+      url: "https://animate-in.vercel.app/screenshot.jpg",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image", 
+    creator: "@johnpolacek", 
+    images: "https://animate-in.vercel.app/screenshot.jpg",
+  }
 }
 
 export default function RootLayout({

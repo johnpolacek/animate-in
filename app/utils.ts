@@ -44,7 +44,7 @@ export function getAnimateInCode({animateFrom, animateTo, delay, duration, ease}
   to="${animateTo}"${delay ? `
   delay=${delay}
   ` : ''}${duration ? `
-  duration=${duration}` : ''}${ease === "ease-in-out" ? "" : `
+  duration={${duration}}` : ''}${ease === "ease-in-out" ? "" : `
   style={{transitionTimingFunction:"${ease}"}}`}
 >
   Animate In!
